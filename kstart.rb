@@ -47,7 +47,8 @@ YAML
 run 'rm -rf app/assets/stylesheets'
 run 'rm -rf vendor'
 run 'curl -L https://raw.githubusercontent.com/kduvenci/MyRoRTemplate/master/kstyle.zip > stylesheets.zip'
-run 'unzip stylesheets.zip -d app/assets && rm stylesheets.zip && mv app/assets/rails-stylesheets-master app/assets/stylesheets'
+run 'curl -L https://github.com/lewagon/stylesheets/archive/master.zip > stylesheets.zip'
+run 'unzip stylesheets.zip -d app/assets && rm stylesheets.zip
 
 if Rails.version < "6"
   run 'rm app/assets/javascripts/application.js'

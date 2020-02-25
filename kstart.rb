@@ -46,7 +46,6 @@ YAML
 ########################################
 run 'rm -rf app/assets/stylesheets'
 run 'rm -rf vendor'
-run 'unzip stylesheets.zip -d app/assets && rm stylesheets.zip && mv app/assets/rails-stylesheets-master app/assets/stylesheets'
 run 'unzip stylesheets.zip -d app/assets && rm stylesheets.zip
 
 if Rails.version < "6"
